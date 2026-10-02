@@ -1,2 +1,0 @@
-# LAB_OOSD
-baitaplabPPTPMHDT
