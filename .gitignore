@@ -1,0 +1,7 @@
+WinForms/bin/
+WinForms/obj/
+.vs/
+*.user
+*.suo
+PaymentMock/
+EmailOutbox/
