@@ -1,0 +1,57 @@
+STATIC STRUCTURAL CHECKS ONLY — no compilation, runtime or SQL execution.
+PASS TargetFrameworkVersion v4.7.2
+PASS Project source exists Program.cs
+PASS Lexical delimiter balance Program.cs
+PASS Project source exists Domain.cs
+PASS Lexical delimiter balance Domain.cs
+PASS Project source exists Data.cs
+PASS Lexical delimiter balance Data.cs
+PASS Project source exists Adapters.cs
+PASS Lexical delimiter balance Adapters.cs
+PASS Project source exists Services.cs
+PASS Lexical delimiter balance Services.cs
+PASS Project source exists Forms.cs
+PASS Lexical delimiter balance Forms.cs
+PASS Project source exists SelfTests.cs
+PASS Lexical delimiter balance SelfTests.cs
+PASS DataSetExtensions reference
+PASS Distinct shop and external product connections
+PASS No SQL API or query text in Forms
+PASS 16 editable UML pages
+PASS Valid drawio edge ids 01_usecase
+PASS Valid drawio edge ids 02_usecase_checkout
+PASS Valid drawio edge ids 03_analysis
+PASS Valid drawio edge ids 04_state_checkout
+PASS Valid drawio edge ids 05_state_cart
+PASS Valid drawio edge ids 06_sequence_register
+PASS Valid drawio edge ids 07_sequence_catalog
+PASS Valid drawio edge ids 08_sequence_checkout
+PASS Valid drawio edge ids 09_sequence_recovery
+PASS Valid drawio edge ids 10_sequence_email
+PASS Valid drawio edge ids 11_design_services
+PASS Valid drawio edge ids 12_design_data
+PASS Valid drawio edge ids 13_activity
+PASS Valid drawio edge ids 14_architecture
+PASS Valid drawio edge ids 15_analysis_entities
+PASS Valid drawio edge ids 16_database
+PASS 15 requirements traced
+PASS 36 distinct C# Service tests
+PASS 28 manual scenarios
+PASS Every FR references valid manual cases
+PASS 11 internal SQL tables
+PASS 3 external product SQL tables
+PASS UNIQUE order request constraint
+PASS No persisted PAN or CSV fields
+PASS Product image fixture SP001_1
+PASS Product image fixture SP001_2
+PASS Product image fixture SP002_1
+PASS Product image fixture SP002_2
+PASS Product image fixture SP003_1
+PASS Product image fixture SP003_2
+PASS Product image fixture SP004_1
+PASS Product image fixture SP004_2
+PASS Product image fixture SP005_1
+PASS Product image fixture SP005_2
+PASS Report exists
+Checks: 54; failed: 0
+C# UT01–UT36, SQL IT01–IT07 and UI MT01–MT28: NOT RUN in authoring environment.
