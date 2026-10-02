@@ -1,0 +1,7 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {"label": "Build hotel", "type": "process", "command": "dotnet", "args": ["build", "${workspaceFolder}/QuanLyKhachSan/QuanLyKhachSan.csproj"], "group": {"kind": "build", "isDefault": true}, "problemMatcher": "$msCompile"},
+    {"label": "Run hotel", "type": "process", "command": "dotnet", "args": ["run", "--project", "${workspaceFolder}/QuanLyKhachSan/QuanLyKhachSan.csproj"], "dependsOn": "Build hotel", "problemMatcher": []}
+  ]
+}
