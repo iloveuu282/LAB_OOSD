@@ -1,0 +1,30 @@
+# Các hình UML
+
+- [P01.png](P01.png): Biểu đồ use case tổng quát của hệ thống quản lý công ty du lịch
+- [P02.png](P02.png): Phân rã use case: từ đăng ký tour đến kết thúc tour
+- [P03.png](P03.png): Phân rã use case Quản lý tour - hành trình
+- [B01.png](B01.png): Phân rã use case Tạo chuyến khách lẻ
+- [B02.png](B02.png): Phân rã use case Hủy đăng ký đoàn mất cọc
+- [P04.png](P04.png): Biểu đồ lớp phân tích (Class Diagram)
+- [P05.png](P05.png): là vòng đời phiếu đăng ký đoàn: trạng thái lưu trong CSDL gồm Đã đăng ký, Hủy - mất cọc, Đã hoàn tất thanh toán; hai trạng thái Đang đi tour, Chờ thanh toán suy ra từ ngày. Hình P.6 là trạng thái của chuyến khách lẻ và phiếu khảo sát.
+- [P05.png](P05.png): Biểu đồ trạng thái PhieuDangKyDoan
+- [P06.png](P06.png): Biểu đồ trạng thái ChuyenLe và PhieuKhaoSat
+- [P07.png](P07.png): Biểu đồ tuần tự Lập phiếu đăng ký tour theo đoàn
+- [P08.png](P08.png): Biểu đồ tuần tự Đăng ký khách lẻ theo chuyến
+- [P09.png](P09.png): Biểu đồ tuần tự Phân công hướng dẫn viên
+- [P10.png](P10.png): Biểu đồ tuần tự Thanh toán kinh phí đoàn sau tour
+- [P11.png](P11.png): Biểu đồ tuần tự Gửi khảo sát và ghi nhận góp ý
+- [P12.png](P12.png): Biểu đồ tuần tự Tính lương hướng dẫn viên
+- [B03.png](B03.png): Sequence Diagram Tạo chuyến khách lẻ
+- [B04.png](B04.png): Sequence Diagram Hủy đăng ký đoàn mất cọc
+- [P13.png](P13.png): Biểu đồ lớp thiết kế chi tiết
+- [P14.png](P14.png): Thiết kế lớp cho chức năng Tour - hành trình
+- [P15.png](P15.png): Thiết kế lớp cho chức năng Lịch chuyến và đăng ký khách lẻ
+- [P16.png](P16.png): Thiết kế lớp cho chức năng Đăng ký theo đoàn
+- [P17.png](P17.png): Thiết kế lớp cho chức năng Phân công hướng dẫn viên
+- [P18.png](P18.png): Thiết kế lớp cho chức năng Kết thúc tour - khảo sát
+- [P19.png](P19.png): Thiết kế lớp cho chức năng Lương - thống kê
+- [P20.png](P20.png): Biểu đồ hoạt động: từ đăng ký tour đến kết thúc tour
+- [B05.png](B05.png): Activity Diagram Tạo chuyến khách lẻ
+- [B06.png](B06.png): Activity Diagram Hủy đăng ký đoàn mất cọc
+- [P22.png](P22.png): Sơ đồ điều hướng hệ thống Form

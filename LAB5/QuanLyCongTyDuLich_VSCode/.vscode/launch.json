@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "WinForms .NET Framework 4.7.2",
+      "type": "clr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/QuanLyCongTyDuLich/bin/Debug/QuanLyCongTyDuLich.exe",
+      "cwd": "${workspaceFolder}/src/QuanLyCongTyDuLich/bin/Debug",
+      "args": [],
+      "stopAtEntry": false,
+      "justMyCode": true
+    }
+  ]
+}
