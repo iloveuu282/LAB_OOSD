@@ -1,0 +1,43 @@
+flowchart LR
+  BN["Bệnh nhân"]
+  TN["Nhân viên tiếp nhận"]
+  NG["Thu ngân"]
+  BS["Bác sĩ"]
+  KTV["KTV xét nghiệm"]
+  CS["Nhân viên CSKH"]
+  QT["Quản trị viên"]
+  subgraph HT["HỆ THỐNG QUẢN LÝ HỒ SƠ BỆNH ÁN"]
+    direction TB
+    UC1(["Đăng ký bệnh nhân"])
+    UC2(["Thu lệ phí năm / cấp hồ sơ"])
+    UC3(["Tiếp nhận phiếu khám"])
+    UC4(["Tra cứu lịch sử bệnh án"])
+    UC5(["Khám và chẩn đoán"])
+    UC6(["Chỉ định xét nghiệm"])
+    UC7(["Nhập kết quả xét nghiệm"])
+    UC8(["Lập toa thuốc"])
+    UC9(["Thanh toán viện phí"])
+    UC10(["Hoàn tất điều trị"])
+    UC11(["Đặt lịch khám định kỳ quý"])
+    UC12(["Quản lý danh mục / tài khoản"])
+  end
+  BN --- UC1
+  BN --- UC11
+  TN --- UC1
+  TN --- UC3
+  NG --- UC2
+  NG --- UC9
+  BS --- UC4
+  BS --- UC5
+  BS --- UC6
+  BS --- UC8
+  KTV --- UC7
+  CS --- UC10
+  CS --- UC11
+  QT --- UC12
+  UC1 -. "«include» nếu lần đầu" .-> UC2
+  UC10 -. "«include» xác nhận phí" .-> UC9
+  classDef actor fill:#fff,stroke:#333,color:#111
+  classDef usecase fill:#fff,stroke:#333,color:#111
+  class BN,TN,NG,BS,KTV,CS,QT actor
+  class UC1,UC2,UC3,UC4,UC5,UC6,UC7,UC8,UC9,UC10,UC11,UC12 usecase

@@ -1,0 +1,26 @@
+flowchart TD
+  A([Bắt đầu]) --> B[Tiếp nhận bệnh nhân]
+  B --> C{Đã có hồ sơ?}
+  C -- Chưa --> D[Nhập thông tin đăng ký]
+  D --> E[Thu lệ phí năm]
+  E --> F{Thanh toán lệ phí thành công?}
+  F -- Không --> X([Dừng, chưa cấp hồ sơ])
+  F -- Có --> G[Cấp mã hồ sơ duy nhất]
+  C -- Có --> H[Tra cứu hồ sơ và lịch sử]
+  G --> I[Lập phiếu khám]
+  H --> I
+  I --> J[Bác sĩ khám và ghi triệu chứng]
+  J --> K{Cần xét nghiệm?}
+  K -- Có --> L[Chỉ định xét nghiệm]
+  L --> M[KTV ghi nhận kết quả]
+  M --> N[Bác sĩ đọc kết quả]
+  K -- Không --> O[Lập toa thuốc]
+  N --> O
+  O --> P[Bệnh nhân nhận toa]
+  P --> Q[Thanh toán viện phí]
+  Q --> R{Đã thanh toán hoặc miễn phí hợp lệ?}
+  R -- Không --> S[Giữ trạng thái chờ thanh toán]
+  R -- Có --> T[CSKH lưu và hoàn tất đợt điều trị]
+  S --> U([Kết thúc])
+  T --> U
+  classDef default fill:#fff,stroke:#333,color:#111

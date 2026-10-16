@@ -1,0 +1,12 @@
+flowchart TD
+  A["WinForms UI: Tiếp nhận, khám, xét nghiệm, toa thuốc, lịch hẹn, thu ngân"]
+  B["Service / Business Rules: Đăng ký, lệ phí năm, xét nghiệm, toa, hoàn tất"]
+  C["Repository / ADO.NET: SqlConnection, SqlCommand, SqlTransaction"]
+  D[("SQL Server: 12 bảng, PK/FK/UNIQUE/CHECK, stored procedures")]
+  A -->|DTO + yêu cầu| B
+  B -->|Lệnh truy vấn / transaction| C
+  C -->|SQL tham số hóa| D
+  D -->|Kết quả truy vấn| C
+  C -->|Dữ liệu| B
+  B -->|Kết quả / lỗi nghiệp vụ| A
+  classDef default fill:#fff,stroke:#333,color:#111

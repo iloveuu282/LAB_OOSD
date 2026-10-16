@@ -1,0 +1,38 @@
+erDiagram
+  BENHNHAN ||--o| HOSOBENHAN : so_huu
+  BENHNHAN ||--o{ LEPHINAM : dong
+  HOSOBENHAN ||--o{ PHIEUKHAM : luu
+  HOSOBENHAN ||--o{ LICHKHAM : dat
+  KHOA ||--o{ BACSI : gom
+  BACSI ||--o{ PHIEUKHAM : kham
+  PHIEUKHAM ||--o{ XETNGHIEM : chi_dinh
+  PHIEUKHAM ||--o| TOATHUOC : co
+  PHIEUKHAM ||--o| THANHTOAN : thanh_toan
+  TOATHUOC ||--|{ CHITIETTOA : gom
+  THUOC ||--o{ CHITIETTOA : duoc_ke
+  BENHNHAN { int BenhNhanID PK
+    string HoTen
+    date NgaySinh }
+  HOSOBENHAN { int HoSoID PK
+    int BenhNhanID FK
+    string MaHoSo UK }
+  LEPHINAM { int LePhiID PK
+    int BenhNhanID FK
+    int Nam }
+  KHOA { int KhoaID PK }
+  BACSI { int BacSiID PK
+    int KhoaID FK }
+  PHIEUKHAM { int PhieuKhamID PK
+    int HoSoID FK
+    int BacSiID FK }
+  XETNGHIEM { int XetNghiemID PK
+    int PhieuKhamID FK }
+  TOATHUOC { int ToaThuocID PK
+    int PhieuKhamID FK }
+  CHITIETTOA { int ToaThuocID PK,FK
+    int ThuocID PK,FK }
+  THUOC { int ThuocID PK }
+  LICHKHAM { int LichKhamID PK
+    int HoSoID FK }
+  THANHTOAN { int ThanhToanID PK
+    int PhieuKhamID FK }
