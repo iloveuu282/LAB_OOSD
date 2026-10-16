@@ -1,0 +1,31 @@
+@startuml
+left to right direction
+skinparam monochrome true
+actor "Bệnh nhân" as BN
+actor "Tiếp nhận" as TN
+actor "Bác sĩ" as BS
+actor "KTV" as KTV
+rectangle "Quy trình khám" {
+usecase "Đăng ký khám" as A
+usecase "Kiểm tra hồ sơ" as B
+usecase "Đăng ký lần đầu" as C
+usecase "Thu phí năm" as D
+usecase "Cấp hồ sơ" as E
+usecase "Khám bệnh" as F
+usecase "Chỉ định xét nghiệm" as G
+usecase "Trả kết quả" as H
+usecase "Lập và nhận toa" as I
+}
+BN -- A
+TN -- A
+BS -- F
+BS -- G
+BS -- I
+KTV -- H
+A ..> B : <<include>>
+C ..> A : <<extend>>
+C ..> D : <<include>>
+C ..> E : <<include>>
+G ..> F : <<extend>>
+G ..> H : <<include>>
+@enduml

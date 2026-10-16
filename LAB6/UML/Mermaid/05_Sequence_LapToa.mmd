@@ -1,0 +1,32 @@
+sequenceDiagram
+  autonumber
+  actor BS as Bác sĩ
+  participant UI as FrmToaThuoc
+  participant SV as ToaThuocService
+  participant DB as SQL Server
+  BS->>UI: Chọn phiếu khám
+  UI->>SV: LayThongTinKham(phieuKhamId)
+  SV->>DB: SELECT phiếu khám + kết quả XN
+  DB-->>SV: Dữ liệu khám
+  SV-->>UI: Hiển thị lịch sử, kết quả
+  BS->>UI: Nhập thuốc, số lượng, liều dùng
+  UI->>SV: LapToa(phieuKhamId, dsThuoc)
+  SV->>SV: Kiểm tra phiếu, thuốc, liều
+  alt Dữ liệu hợp lệ
+    SV->>DB: BEGIN TRANSACTION
+    SV->>DB: INSERT ToaThuoc
+    DB-->>SV: ToaThuocID
+    loop Từng dòng thuốc
+      SV->>DB: INSERT ChiTietToa
+    end
+    alt Tất cả thao tác thành công
+      SV->>DB: COMMIT
+      SV-->>UI: Mã toa, trạng thái thành công
+      UI-->>BS: Hiển thị/in toa
+    else Lỗi ghi dữ liệu
+      SV->>DB: ROLLBACK
+      SV-->>UI: Thông báo lỗi
+    end
+  else Dữ liệu không hợp lệ
+    SV-->>UI: Trả lỗi kiểm tra
+  end

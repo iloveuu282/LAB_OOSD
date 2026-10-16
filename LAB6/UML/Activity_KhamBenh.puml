@@ -1,0 +1,30 @@
+@startuml
+skinparam monochrome true
+start
+:Tiếp nhận bệnh nhân;
+if (Đã có hồ sơ?) then (Có)
+:Tra cứu hồ sơ;
+else (Chưa)
+:Đăng ký bệnh nhân;
+:Thu lệ phí năm;
+if (Thu phí thành công?) then (Có)
+:Cấp hồ sơ;
+else (Không)
+stop
+endif
+endif
+:Lập phiếu khám;
+:Bác sĩ xem lịch sử và khám;
+if (Cần xét nghiệm?) then (Có)
+:Chỉ định xét nghiệm;
+:Thực hiện và cập nhật kết quả;
+endif
+:Lập toa thuốc;
+:Thanh toán viện phí;
+if (Đã thanh toán?) then (Có)
+:CSKH hoàn tất và lưu lịch sử;
+else (Chưa)
+:Giữ trạng thái chờ thanh toán;
+endif
+stop
+@enduml

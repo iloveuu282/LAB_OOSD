@@ -1,0 +1,41 @@
+@startuml
+left to right direction
+skinparam monochrome true
+actor "Bệnh nhân" as BN
+actor "Tiếp nhận" as TN
+actor "Thu ngân" as TG
+actor "Bác sĩ" as BS
+actor "KTV xét nghiệm" as KTV
+actor "CSKH" as CS
+actor "Quản trị" as QT
+rectangle "Hệ thống quản lý bệnh án" {
+usecase "Đăng ký và cấp hồ sơ" as U1
+usecase "Thu lệ phí năm" as U2
+usecase "Tiếp nhận khám" as U3
+usecase "Tra cứu bệnh án" as U4
+usecase "Khám và chẩn đoán" as U5
+usecase "Chỉ định xét nghiệm" as U6
+usecase "Trả kết quả" as U7
+usecase "Lập toa thuốc" as U8
+usecase "Thu viện phí" as U9
+usecase "Hoàn tất điều trị" as U10
+usecase "Đặt lịch khám quý" as U11
+usecase "Quản lý danh mục" as U12
+}
+BN -- U1
+BN -- U11
+TN -- U1
+TN -- U3
+TG -- U2
+TG -- U9
+BS -- U4
+BS -- U5
+BS -- U6
+BS -- U8
+KTV -- U7
+CS -- U10
+CS -- U11
+QT -- U12
+U1 ..> U2 : <<include>>
+U10 ..> U9 : <<include>>
+@enduml
