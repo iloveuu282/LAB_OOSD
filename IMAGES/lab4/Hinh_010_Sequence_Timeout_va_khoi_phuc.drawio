@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17" type="device" sourceImage="image67.png" sourceOccurrence="67">
+  <diagram id="lab4-hinh10" name="Hình 010 - Sequence Timeout và khôi phục">
+    <mxGraphModel dx="1100" dy="1206" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1210" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1" value="Sequence Timeout và khôi phục" style="html=1;whiteSpace=wrap;overflow=hidden;text;strokeColor=none;fillColor=none;fontColor=#222222;fontSize=20;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="10" width="1020" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="CheckoutForm" style="html=1;whiteSpace=wrap;overflow=hidden;shape=umlLifeline;perimeter=lifelinePerimeter;size=50;fillColor=#eaf2f8;strokeColor=#4d6574;fontColor=#111111;fontSize=13;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="20.0" y="65" width="160" height="1061" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="CheckoutService" style="html=1;whiteSpace=wrap;overflow=hidden;shape=umlLifeline;perimeter=lifelinePerimeter;size=50;fillColor=#eaf2f8;strokeColor=#4d6574;fontColor=#111111;fontSize=13;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="320.0" y="65" width="160" height="1061" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="PaymentAdapter" style="html=1;whiteSpace=wrap;overflow=hidden;shape=umlLifeline;perimeter=lifelinePerimeter;size=50;fillColor=#eaf2f8;strokeColor=#4d6574;fontColor=#111111;fontSize=13;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="620.0" y="65" width="160" height="1061" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="ShopRepository" style="html=1;whiteSpace=wrap;overflow=hidden;shape=umlLifeline;perimeter=lifelinePerimeter;size=50;fillColor=#eaf2f8;strokeColor=#4d6574;fontColor=#111111;fontSize=13;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="920.0" y="65" width="160" height="1061" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="UNKNOWN: tiếp tục đối soát. DECLINED: giữ giỏ, lần thử mới có mã mới. Resume không Authorize lại." style="html=1;whiteSpace=wrap;overflow=hidden;text;strokeColor=none;fillColor=none;fontColor=#222222;fontSize=12;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="35" y="1126" width="1030" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" value="1. Submit với cùng mã yêu cầu" style="html=1;fontColor=#222222;endArrow=block;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;exitX=0.5;exitY=0.08011;exitPerimeter=0;entryX=0.5;entryY=0.08011;entryPerimeter=0;" edge="1" parent="1" source="n2" target="n3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100.0" y="150" as="sourcePoint" />
+            <mxPoint x="400.0" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e1" value="2. Authorize(id, total, card)" style="html=1;fontColor=#222222;endArrow=block;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;exitX=0.5;exitY=0.14797;exitPerimeter=0;entryX=0.5;entryY=0.14797;entryPerimeter=0;" edge="1" parent="1" source="n3" target="n4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400.0" y="222" as="sourcePoint" />
+            <mxPoint x="700.0" y="222" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" value="3. Timeout: không rõ kết quả" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;exitX=0.5;exitY=0.21583;exitPerimeter=0;entryX=0.5;entryY=0.21583;entryPerimeter=0;dashed=1;" edge="1" parent="1" source="n4" target="n3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700.0" y="294" as="sourcePoint" />
+            <mxPoint x="400.0" y="294" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" value="4. RecordPayment UNKNOWN" style="html=1;fontColor=#222222;endArrow=block;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;exitX=0.5;exitY=0.28369;exitPerimeter=0;entryX=0.5;entryY=0.28369;entryPerimeter=0;" edge="1" parent="1" source="n3" target="n5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400.0" y="366" as="sourcePoint" />
+            <mxPoint x="1000.0" y="366" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" value="5. Giữ mã; không tạo Order" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;exitX=0.5;exitY=0.35156;exitPerimeter=0;entryX=0.5;entryY=0.35156;entryPerimeter=0;dashed=1;" edge="1" parent="1" source="n3" target="n2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400.0" y="438" as="sourcePoint" />
+            <mxPoint x="100.0" y="438" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" value="6. Resume(id, customerId)" style="html=1;fontColor=#222222;endArrow=block;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;exitX=0.5;exitY=0.41942;exitPerimeter=0;entryX=0.5;entryY=0.41942;entryPerimeter=0;" edge="1" parent="1" source="n2" target="n3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100.0" y="510" as="sourcePoint" />
+            <mxPoint x="400.0" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" value="7. GetRequest + kiểm tra chủ sở hữu" style="html=1;fontColor=#222222;endArrow=block;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;exitX=0.5;exitY=0.48728;exitPerimeter=0;entryX=0.5;entryY=0.48728;entryPerimeter=0;" edge="1" parent="1" source="n3" target="n5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400.0" y="582" as="sourcePoint" />
+            <mxPoint x="1000.0" y="582" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" value="8. Query(id, total)" style="html=1;fontColor=#222222;endArrow=block;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;exitX=0.5;exitY=0.55514;exitPerimeter=0;entryX=0.5;entryY=0.55514;entryPerimeter=0;" edge="1" parent="1" source="n3" target="n4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400.0" y="654" as="sourcePoint" />
+            <mxPoint x="700.0" y="654" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" value="9. AUTHORIZED / DECLINED / UNKNOWN" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;exitX=0.5;exitY=0.62300;exitPerimeter=0;entryX=0.5;entryY=0.62300;entryPerimeter=0;dashed=1;" edge="1" parent="1" source="n4" target="n3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700.0" y="726" as="sourcePoint" />
+            <mxPoint x="400.0" y="726" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" value="10. Ghi kết quả cuối nếu có" style="html=1;fontColor=#222222;endArrow=block;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;exitX=0.5;exitY=0.69086;exitPerimeter=0;entryX=0.5;entryY=0.69086;entryPerimeter=0;" edge="1" parent="1" source="n3" target="n5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400.0" y="798" as="sourcePoint" />
+            <mxPoint x="1000.0" y="798" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" value="11. [AUTHORIZED] CompleteCheckout(id)" style="html=1;fontColor=#222222;endArrow=block;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;exitX=0.5;exitY=0.75872;exitPerimeter=0;entryX=0.5;entryY=0.75872;entryPerimeter=0;" edge="1" parent="1" source="n3" target="n5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400.0" y="870" as="sourcePoint" />
+            <mxPoint x="1000.0" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" value="12. Cùng OrderId nếu đã hoàn tất" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;exitX=0.5;exitY=0.82658;exitPerimeter=0;entryX=0.5;entryY=0.82658;entryPerimeter=0;dashed=1;" edge="1" parent="1" source="n5" target="n3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1000.0" y="942" as="sourcePoint" />
+            <mxPoint x="400.0" y="942" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" value="13. Hiển thị kết quả" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;exitX=0.5;exitY=0.89444;exitPerimeter=0;entryX=0.5;entryY=0.89444;entryPerimeter=0;dashed=1;" edge="1" parent="1" source="n3" target="n2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400.0" y="1014" as="sourcePoint" />
+            <mxPoint x="100.0" y="1014" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

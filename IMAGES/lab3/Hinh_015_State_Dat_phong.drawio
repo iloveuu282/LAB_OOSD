@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17" type="device" sourceImage="image49.png" sourceOccurrence="49">
+  <diagram id="lab3-hinh15" name="Hình 015 - State Đặt phòng">
+    <mxGraphModel dx="1250" dy="850" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1250" pageHeight="850" background="#000000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1" value="State Đặt phòng" style="html=1;whiteSpace=wrap;overflow=hidden;text;strokeColor=none;fillColor=none;fontColor=#bbbbbb;fontSize=20;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="12" width="1190" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="" style="html=1;whiteSpace=wrap;overflow=hidden;ellipse;fillColor=#eeeeee;strokeColor=#bbbbbb;fontColor=#eeeeee;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="600" y="80" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="DaDat" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=1;arcSize=18;fillColor=#222222;strokeColor=#bbbbbb;fontColor=#eeeeee;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="470" y="190" width="280" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="DangO" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=1;arcSize=18;fillColor=#222222;strokeColor=#bbbbbb;fontColor=#eeeeee;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="70" y="420" width="230" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="Huy" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=1;arcSize=18;fillColor=#222222;strokeColor=#bbbbbb;fontColor=#eeeeee;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="490" y="420" width="230" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="NoShow" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=1;arcSize=18;fillColor=#222222;strokeColor=#bbbbbb;fontColor=#eeeeee;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="900" y="420" width="230" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="DaTra" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=1;arcSize=18;fillColor=#222222;strokeColor=#bbbbbb;fontColor=#eeeeee;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="70" y="660" width="230" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" value="" style="html=1;fontColor=#eeeeee;endArrow=open;endFill=1;startArrow=none;strokeColor=#bbbbbb;fontSize=12;fontFamily=Arial;labelBackgroundColor=#000000;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=15;" edge="1" parent="1" source="n2" target="n3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="Nhận phòng" style="html=1;fontColor=#eeeeee;endArrow=open;endFill=1;startArrow=none;strokeColor=#bbbbbb;fontSize=12;fontFamily=Arial;labelBackgroundColor=#000000;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=15;" edge="1" parent="1" source="n3" target="n4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="Hủy" style="html=1;fontColor=#eeeeee;endArrow=open;endFill=1;startArrow=none;strokeColor=#bbbbbb;fontSize=12;fontFamily=Arial;labelBackgroundColor=#000000;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=15;" edge="1" parent="1" source="n3" target="n5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="Xác nhận vắng mặt" style="html=1;fontColor=#eeeeee;endArrow=open;endFill=1;startArrow=none;strokeColor=#bbbbbb;fontSize=12;fontFamily=Arial;labelBackgroundColor=#000000;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=15;" edge="1" parent="1" source="n3" target="n6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="Thanh toán đủ và trả phòng" style="html=1;fontColor=#eeeeee;endArrow=open;endFill=1;startArrow=none;strokeColor=#bbbbbb;fontSize=12;fontFamily=Arial;labelBackgroundColor=#000000;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=15;" edge="1" parent="1" source="n4" target="n7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

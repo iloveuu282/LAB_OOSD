@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17" type="device" sourceImage="image50.png" sourceOccurrence="50">
+  <diagram id="lab3-hinh16" name="Hình 016 - State Hóa đơn">
+    <mxGraphModel dx="1000" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="800" background="#000000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1" value="State Hóa đơn" style="html=1;whiteSpace=wrap;overflow=hidden;text;strokeColor=none;fillColor=none;fontColor=#bbbbbb;fontSize=20;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="12" width="940" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="" style="html=1;whiteSpace=wrap;overflow=hidden;ellipse;fillColor=#eeeeee;strokeColor=#bbbbbb;fontColor=#eeeeee;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="490" y="75" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="ChuaThanhToan" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=1;arcSize=18;fillColor=#222222;strokeColor=#bbbbbb;fontColor=#eeeeee;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="350" y="200" width="300" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="DaThanhToan" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=1;arcSize=18;fillColor=#222222;strokeColor=#bbbbbb;fontColor=#eeeeee;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="350" y="560" width="300" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" value="Lập hóa đơn" style="html=1;fontColor=#eeeeee;endArrow=open;endFill=1;startArrow=none;strokeColor=#bbbbbb;fontSize=12;fontFamily=Arial;labelBackgroundColor=#000000;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=15;" edge="1" parent="1" source="n2" target="n3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="Trả một phần" style="html=1;fontColor=#eeeeee;endArrow=open;endFill=1;startArrow=none;strokeColor=#bbbbbb;fontSize=12;fontFamily=Arial;labelBackgroundColor=#000000;rounded=0;" edge="1" parent="1" source="n3" target="n3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440.0" y="200" as="sourcePoint" />
+            <mxPoint x="590.0" y="200" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="440.0" y="135" />
+              <mxPoint x="590.0" y="135" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" value="Đã đủ tiền" style="html=1;fontColor=#eeeeee;endArrow=open;endFill=1;startArrow=none;strokeColor=#bbbbbb;fontSize=12;fontFamily=Arial;labelBackgroundColor=#000000;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=15;" edge="1" parent="1" source="n3" target="n4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17" type="device" sourceImage="image69.png" sourceOccurrence="69">
+  <diagram id="lab4-hinh12" name="Hình 012 - Component Kiến trúc UI Service Adapter Data">
+    <mxGraphModel dx="1100" dy="980" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="980" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1" value="Component Kiến trúc UI Service Adapter Data" style="html=1;whiteSpace=wrap;overflow=hidden;text;strokeColor=none;fillColor=none;fontColor=#222222;fontSize=20;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="12" width="1040" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="«component»&lt;br&gt;UI&lt;br&gt;Các Form WinForms" style="html=1;whiteSpace=wrap;overflow=hidden;shape=component;jettyWidth=8;jettyHeight=4;fillColor=#edf5fb;strokeColor=#496777;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="390" y="70" width="320" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="«component»&lt;br&gt;Service&lt;br&gt;Account Catalog Cart Checkout Rules" style="html=1;whiteSpace=wrap;overflow=hidden;shape=component;jettyWidth=8;jettyHeight=4;fillColor=#edf5fb;strokeColor=#496777;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="300" y="310" width="500" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="«component»&lt;br&gt;SqlShopRepository" style="html=1;whiteSpace=wrap;overflow=hidden;shape=component;jettyWidth=8;jettyHeight=4;fillColor=#edf5fb;strokeColor=#496777;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="60" y="550" width="320" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="«component»&lt;br&gt;Các interface Adapter&lt;br&gt;Product Payment Email" style="html=1;whiteSpace=wrap;overflow=hidden;shape=component;jettyWidth=8;jettyHeight=4;fillColor=#edf5fb;strokeColor=#496777;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="700" y="550" width="320" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="«component»&lt;br&gt;SQL Server e-SHOPPING&lt;br&gt;Customer Order Attempt Outbox" style="html=1;whiteSpace=wrap;overflow=hidden;shape=component;jettyWidth=8;jettyHeight=4;fillColor=#edf5fb;strokeColor=#496777;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="60" y="790" width="350" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="«component»&lt;br&gt;Ba hệ thống ngoài&lt;br&gt;ProductMock / PaymentMock / MailMock" style="html=1;whiteSpace=wrap;overflow=hidden;shape=component;jettyWidth=8;jettyHeight=4;fillColor=#edf5fb;strokeColor=#496777;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="700" y="790" width="350" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" value="" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;dashed=1;" edge="1" parent="1" source="n2" target="n3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;dashed=1;" edge="1" parent="1" source="n3" target="n4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;dashed=1;" edge="1" parent="1" source="n3" target="n5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;dashed=1;" edge="1" parent="1" source="n4" target="n6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;dashed=1;" edge="1" parent="1" source="n5" target="n7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
