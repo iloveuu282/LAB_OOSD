@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17" type="device" sourceImage="image125.png" sourceOccurrence="140">
+  <diagram id="lab5-hinh64" name="Hình 064 - B02 Use Case Hủy đăng ký đoàn mất cọc">
+    <mxGraphModel dx="1300" dy="930" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="930" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1" value="B02 Use Case Hủy đăng ký đoàn mất cọc" style="html=1;whiteSpace=wrap;overflow=hidden;text;strokeColor=none;fillColor=none;fontColor=#222222;fontSize=20;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="10" width="1220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#999999;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="205" y="65" width="890" height="830" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="HỆ THỐNG QUẢN LÝ CÔNG TY DU LỊCH" style="html=1;whiteSpace=wrap;overflow=hidden;text;strokeColor=none;fillColor=none;fontColor=#222222;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="225" y="72" width="850" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="Nhân viên kinh doanh" style="html=1;whiteSpace=wrap;overflow=hidden;shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;labelWidth=150;fillColor=none;strokeColor=#333333;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="70" y="380" width="40" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="Hủy đăng ký đoàn mất cọc" style="html=1;whiteSpace=wrap;overflow=hidden;ellipse;fillColor=#ffffff;strokeColor=#555555;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="340" y="360" width="260" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="Kiểm tra điều kiện hủy" style="html=1;whiteSpace=wrap;overflow=hidden;ellipse;fillColor=#ffffff;strokeColor=#555555;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="810" y="140" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="Giải phóng phân công HDV" style="html=1;whiteSpace=wrap;overflow=hidden;ellipse;fillColor=#ffffff;strokeColor=#555555;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="810" y="390" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n8" value="Ghi trạng thái hủy và giữ tiền cọc" style="html=1;whiteSpace=wrap;overflow=hidden;ellipse;fillColor=#ffffff;strokeColor=#555555;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="810" y="640" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" value="" style="html=1;fontColor=#222222;endArrow=none;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;" edge="1" parent="1" source="n4" target="n5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="«include»" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;dashed=1;" edge="1" parent="1" source="n5" target="n6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="«include»" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;dashed=1;" edge="1" parent="1" source="n5" target="n7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="«include»" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;dashed=1;" edge="1" parent="1" source="n5" target="n8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17" type="device" sourceImage="image163.png" sourceOccurrence="180">
+  <diagram id="lab7-hinh6" name="Hình 006 - P02 Use Case Tiếp nhận và ký chính thức">
+    <mxGraphModel dx="1240" dy="1550" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1240" pageHeight="1550" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1" value="P02 Use Case Tiếp nhận và ký chính thức" style="html=1;whiteSpace=wrap;overflow=hidden;text;strokeColor=none;fillColor=none;fontColor=#222222;fontSize=20;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="10" width="1160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#f8fbfd;strokeColor=#999999;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="205" y="65" width="830" height="1450" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="HỆ THỐNG QUẢN LÝ NHÂN SỰ" style="html=1;whiteSpace=wrap;overflow=hidden;text;strokeColor=none;fillColor=none;fontColor=#222222;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="225" y="72" width="790" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="Nhân sự" style="html=1;whiteSpace=wrap;overflow=hidden;shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;labelWidth=150;fillColor=none;strokeColor=#333333;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="60" y="300" width="40" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="Trưởng đơn vị" style="html=1;whiteSpace=wrap;overflow=hidden;shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;labelWidth=150;fillColor=none;strokeColor=#333333;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="60" y="740" width="40" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="Tiếp nhận thử việc" style="html=1;whiteSpace=wrap;overflow=hidden;ellipse;fillColor=#eef7fc;strokeColor=#555555;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="320" y="130" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="Lập quyết định tuyển dụng" style="html=1;whiteSpace=wrap;overflow=hidden;ellipse;fillColor=#eef7fc;strokeColor=#555555;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="750" y="130" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n8" value="Ghi thời gian, lương và điều khoản thử việc" style="html=1;whiteSpace=wrap;overflow=hidden;ellipse;fillColor=#eef7fc;strokeColor=#555555;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="750" y="370" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="n9" value="Ghi kết quả đánh giá thử việc" style="html=1;whiteSpace=wrap;overflow=hidden;ellipse;fillColor=#eef7fc;strokeColor=#555555;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="320" y="700" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" value="Ký hợp đồng chính thức" style="html=1;whiteSpace=wrap;overflow=hidden;ellipse;fillColor=#eef7fc;strokeColor=#555555;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1000" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n11" value="Kiểm tra hết thử việc và kết quả đạt" style="html=1;whiteSpace=wrap;overflow=hidden;ellipse;fillColor=#eef7fc;strokeColor=#555555;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="750" y="1000" width="280" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n12" value="Lập quyết định lương và chức vụ" style="html=1;whiteSpace=wrap;overflow=hidden;ellipse;fillColor=#eef7fc;strokeColor=#555555;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1290" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="n13" value="Lập BHXH và BHYT&lt;br&gt;[Điều kiện dài hạn]" style="html=1;whiteSpace=wrap;overflow=hidden;ellipse;fillColor=#eef7fc;strokeColor=#555555;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="750" y="1290" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" value="" style="html=1;fontColor=#222222;endArrow=none;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;" edge="1" parent="1" source="n4" target="n6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="" style="html=1;fontColor=#222222;endArrow=none;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;" edge="1" parent="1" source="n4" target="n9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="" style="html=1;fontColor=#222222;endArrow=none;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;" edge="1" parent="1" source="n5" target="n9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="" style="html=1;fontColor=#222222;endArrow=none;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;" edge="1" parent="1" source="n4" target="n10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="" style="html=1;fontColor=#222222;endArrow=none;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;" edge="1" parent="1" source="n4" target="n12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="«include»" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;dashed=1;" edge="1" parent="1" source="n6" target="n7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="«include»" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;dashed=1;" edge="1" parent="1" source="n6" target="n8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" value="«include»" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;dashed=1;" edge="1" parent="1" source="n10" target="n11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="«extend»" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;dashed=1;" edge="1" parent="1" source="n13" target="n12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

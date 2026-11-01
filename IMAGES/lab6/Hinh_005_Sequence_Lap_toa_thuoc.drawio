@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17" type="device" sourceImage="image153.png" sourceOccurrence="170">
+  <diagram id="lab6-hinh5" name="Hình 005 - Sequence Lập toa thuốc">
+    <mxGraphModel dx="1100" dy="982" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="990" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1" value="Sequence Lập toa thuốc" style="html=1;whiteSpace=wrap;overflow=hidden;text;strokeColor=none;fillColor=none;fontColor=#222222;fontSize=20;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="10" width="1020" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="Bác sĩ" style="html=1;whiteSpace=wrap;overflow=hidden;shape=umlLifeline;perimeter=lifelinePerimeter;size=50;fillColor=#eaf2f8;strokeColor=#4d6574;fontColor=#111111;fontSize=13;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="20.0" y="65" width="160" height="837" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="FrmToaThuoc" style="html=1;whiteSpace=wrap;overflow=hidden;shape=umlLifeline;perimeter=lifelinePerimeter;size=50;fillColor=#eaf2f8;strokeColor=#4d6574;fontColor=#111111;fontSize=13;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="320.0" y="65" width="160" height="837" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="ToaThuocService" style="html=1;whiteSpace=wrap;overflow=hidden;shape=umlLifeline;perimeter=lifelinePerimeter;size=50;fillColor=#eaf2f8;strokeColor=#4d6574;fontColor=#111111;fontSize=13;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="620.0" y="65" width="160" height="837" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="SQL Server" style="html=1;whiteSpace=wrap;overflow=hidden;shape=umlLifeline;perimeter=lifelinePerimeter;size=50;fillColor=#eaf2f8;strokeColor=#4d6574;fontColor=#111111;fontSize=13;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="920.0" y="65" width="160" height="837" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=#999999;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="25" y="614" width="1050" height="288" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="alt" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffff;strokeColor=#999999;fontColor=#111111;fontSize=12;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="25" y="614" width="55" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="n8" value="[Lỗi đầu vào hoặc SQL: thông báo lỗi, rollback]" style="html=1;whiteSpace=wrap;overflow=hidden;text;strokeColor=none;fillColor=none;fontColor=#222222;fontSize=12;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="85" y="833" width="980" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="n9" value="[Hợp lệ]" style="html=1;whiteSpace=wrap;overflow=hidden;text;strokeColor=none;fillColor=none;fontColor=#222222;fontSize=12;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="85" y="617" width="980" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" value="" style="html=1;fontColor=#222222;endArrow=none;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="25" y="830" as="sourcePoint" />
+            <mxPoint x="1075" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e1" value="1. Chọn phiếu khám" style="html=1;fontColor=#222222;endArrow=block;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;exitX=0.5;exitY=0.10155;exitPerimeter=0;entryX=0.5;entryY=0.10155;entryPerimeter=0;" edge="1" parent="1" source="n2" target="n3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100.0" y="150" as="sourcePoint" />
+            <mxPoint x="400.0" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" value="2. Tải phiếu khám" style="html=1;fontColor=#222222;endArrow=block;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;exitX=0.5;exitY=0.18757;exitPerimeter=0;entryX=0.5;entryY=0.18757;entryPerimeter=0;" edge="1" parent="1" source="n3" target="n4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400.0" y="222" as="sourcePoint" />
+            <mxPoint x="700.0" y="222" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" value="3. SELECT phiếu và xét nghiệm" style="html=1;fontColor=#222222;endArrow=block;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;exitX=0.5;exitY=0.27360;exitPerimeter=0;entryX=0.5;entryY=0.27360;entryPerimeter=0;" edge="1" parent="1" source="n4" target="n5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700.0" y="294" as="sourcePoint" />
+            <mxPoint x="1000.0" y="294" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" value="4. Dữ liệu khám" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;exitX=0.5;exitY=0.35962;exitPerimeter=0;entryX=0.5;entryY=0.35962;entryPerimeter=0;dashed=1;" edge="1" parent="1" source="n5" target="n4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1000.0" y="366" as="sourcePoint" />
+            <mxPoint x="700.0" y="366" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" value="5. Hiển thị kết quả" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;exitX=0.5;exitY=0.44564;exitPerimeter=0;entryX=0.5;entryY=0.44564;entryPerimeter=0;dashed=1;" edge="1" parent="1" source="n4" target="n3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700.0" y="438" as="sourcePoint" />
+            <mxPoint x="400.0" y="438" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" value="6. Nhập thuốc, số lượng, liều" style="html=1;fontColor=#222222;endArrow=block;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;exitX=0.5;exitY=0.53166;exitPerimeter=0;entryX=0.5;entryY=0.53166;entryPerimeter=0;" edge="1" parent="1" source="n2" target="n3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100.0" y="510" as="sourcePoint" />
+            <mxPoint x="400.0" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" value="7. Lập toa (phiếu, danh sách)" style="html=1;fontColor=#222222;endArrow=block;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;exitX=0.5;exitY=0.61768;exitPerimeter=0;entryX=0.5;entryY=0.61768;entryPerimeter=0;" edge="1" parent="1" source="n3" target="n4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400.0" y="582" as="sourcePoint" />
+            <mxPoint x="700.0" y="582" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" value="8. [Hợp lệ] BEGIN TRAN + INSERT ToaThuoc" style="html=1;fontColor=#222222;endArrow=block;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;exitX=0.5;exitY=0.70370;exitPerimeter=0;entryX=0.5;entryY=0.70370;entryPerimeter=0;" edge="1" parent="1" source="n4" target="n5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700.0" y="654" as="sourcePoint" />
+            <mxPoint x="1000.0" y="654" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" value="9. INSERT ChiTietToa" style="html=1;fontColor=#222222;endArrow=block;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;exitX=0.5;exitY=0.78973;exitPerimeter=0;entryX=0.5;entryY=0.78973;entryPerimeter=0;" edge="1" parent="1" source="n4" target="n5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700.0" y="726" as="sourcePoint" />
+            <mxPoint x="1000.0" y="726" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" value="10. COMMIT / ROLLBACK" style="html=1;fontColor=#222222;endArrow=block;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;exitX=0.5;exitY=0.87575;exitPerimeter=0;entryX=0.5;entryY=0.87575;entryPerimeter=0;" edge="1" parent="1" source="n4" target="n5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700.0" y="798" as="sourcePoint" />
+            <mxPoint x="1000.0" y="798" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" value="11. Trả kết quả" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;exitX=0.5;exitY=0.96177;exitPerimeter=0;entryX=0.5;entryY=0.96177;entryPerimeter=0;dashed=1;" edge="1" parent="1" source="n4" target="n3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700.0" y="870" as="sourcePoint" />
+            <mxPoint x="400.0" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

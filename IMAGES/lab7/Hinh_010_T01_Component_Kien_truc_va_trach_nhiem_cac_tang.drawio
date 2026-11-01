@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17" type="device" sourceImage="image167.png" sourceOccurrence="184">
+  <diagram id="lab7-hinh10" name="Hình 010 - T01 Component Kiến trúc và trách nhiệm các tầng">
+    <mxGraphModel dx="1000" dy="1280" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1280" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1" value="T01 Component Kiến trúc và trách nhiệm các tầng" style="html=1;whiteSpace=wrap;overflow=hidden;text;strokeColor=none;fillColor=none;fontColor=#222222;fontSize=20;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="12" width="940" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="«component»&lt;br&gt;UI WinForms&lt;br&gt;MainForm và ContractForm&lt;br&gt;Nhập liệu và hiển thị" style="html=1;whiteSpace=wrap;overflow=hidden;shape=component;jettyWidth=8;jettyHeight=4;fillColor=#edf5fb;strokeColor=#496777;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="170" y="80" width="660" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="«component»&lt;br&gt;Service&lt;br&gt;HrService và Catalog&lt;br&gt;Quyền đầu vào điều phối" style="html=1;whiteSpace=wrap;overflow=hidden;shape=component;jettyWidth=8;jettyHeight=4;fillColor=#edf5fb;strokeColor=#496777;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="170" y="400" width="660" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="«component»&lt;br&gt;Data&lt;br&gt;SqlConnection và SqlParameter&lt;br&gt;Đọc ghi gọi thủ tục" style="html=1;whiteSpace=wrap;overflow=hidden;shape=component;jettyWidth=8;jettyHeight=4;fillColor=#edf5fb;strokeColor=#496777;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="170" y="720" width="660" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="«component»&lt;br&gt;SQL Server&lt;br&gt;21 bảng và stored procedure&lt;br&gt;Ràng buộc khóa giao dịch" style="html=1;whiteSpace=wrap;overflow=hidden;shape=component;jettyWidth=8;jettyHeight=4;fillColor=#edf5fb;strokeColor=#496777;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="170" y="1040" width="660" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" value="Gọi hành vi" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;dashed=1;" edge="1" parent="1" source="n2" target="n3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="Yêu cầu dữ liệu" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;dashed=1;" edge="1" parent="1" source="n3" target="n4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="SQL có tham số" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;dashed=1;" edge="1" parent="1" source="n4" target="n5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

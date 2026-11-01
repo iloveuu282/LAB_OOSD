@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17" type="device" sourceImage="image154.png" sourceOccurrence="171">
+  <diagram id="lab6-hinh6" name="Hình 006 - Component Kiến trúc quản lý hồ sơ bệnh án">
+    <mxGraphModel dx="1100" dy="1040" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1040" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1" value="Component Kiến trúc quản lý hồ sơ bệnh án" style="html=1;whiteSpace=wrap;overflow=hidden;text;strokeColor=none;fillColor=none;fontColor=#222222;fontSize=20;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="12" width="1040" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="«component»&lt;br&gt;TẦNG GIAO DIỆN WinForms&lt;br&gt;FrmBenhNhan | FrmTiepNhan | FrmKhamBenh | FrmXetNghiem&lt;br&gt;FrmToaThuoc | FrmLichKham | FrmThanhToan" style="html=1;whiteSpace=wrap;overflow=hidden;shape=component;jettyWidth=8;jettyHeight=4;fillColor=#edf5fb;strokeColor=#496777;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="110" y="70" width="880" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="«component»&lt;br&gt;TẦNG NGHIỆP VỤ Service&lt;br&gt;Kiểm tra lệ phí | hẹn quý | toa thuốc | hoàn tất điều trị" style="html=1;whiteSpace=wrap;overflow=hidden;shape=component;jettyWidth=8;jettyHeight=4;fillColor=#edf5fb;strokeColor=#496777;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="160" y="340" width="780" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="«component»&lt;br&gt;TẦNG TRUY CẬP DỮ LIỆU&lt;br&gt;ADO.NET Repository / SQL có tham số" style="html=1;whiteSpace=wrap;overflow=hidden;shape=component;jettyWidth=8;jettyHeight=4;fillColor=#edf5fb;strokeColor=#496777;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="230" y="580" width="640" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="«component»&lt;br&gt;SQL SERVER&lt;br&gt;12 bảng | PK FK UNIQUE CHECK | Transaction" style="html=1;whiteSpace=wrap;overflow=hidden;shape=component;jettyWidth=8;jettyHeight=4;fillColor=#edf5fb;strokeColor=#496777;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="230" y="820" width="640" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" value="" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;dashed=1;" edge="1" parent="1" source="n2" target="n3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;dashed=1;" edge="1" parent="1" source="n3" target="n4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#555555;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;dashed=1;" edge="1" parent="1" source="n4" target="n5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

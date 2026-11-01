@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17" type="device" sourceImage="image84.png" sourceOccurrence="84">
+  <diagram id="lab5-hinh8" name="Hình 008 - State Chuyến lẻ và phiếu khảo sát">
+    <mxGraphModel dx="1450" dy="850" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1450" pageHeight="850" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1" value="State Chuyến lẻ và phiếu khảo sát" style="html=1;whiteSpace=wrap;overflow=hidden;text;strokeColor=none;fillColor=none;fontColor=#222222;fontSize=20;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="12" width="1390" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="" style="html=1;whiteSpace=wrap;overflow=hidden;ellipse;fillColor=#222222;strokeColor=#333333;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="50" y="200" width="24" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="Mở đăng ký&lt;br&gt;do / bán vé cho khách lẻ" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=1;arcSize=18;fillColor=#ffffcc;strokeColor=#333333;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="220" y="160" width="340" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="Đóng đăng ký&lt;br&gt;entry / ngừng bán vé" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=1;arcSize=18;fillColor=#ffffcc;strokeColor=#333333;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="820" y="160" width="340" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="" style="html=1;whiteSpace=wrap;overflow=hidden;shape=endState;fillColor=#222222;strokeColor=#333333;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="200" width="26" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="" style="html=1;whiteSpace=wrap;overflow=hidden;ellipse;fillColor=#222222;strokeColor=#333333;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="50" y="610" width="24" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="Đã gửi&lt;br&gt;entry / Ngày gửi &amp;gt; ngày kết thúc tour" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=1;arcSize=18;fillColor=#ffffcc;strokeColor=#333333;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="220" y="570" width="340" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n8" value="Đã phản hồi&lt;br&gt;entry / ghi Điểm đánh giá, Góp ý" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=1;arcSize=18;fillColor=#ffffcc;strokeColor=#333333;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="820" y="570" width="340" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n9" value="" style="html=1;whiteSpace=wrap;overflow=hidden;shape=endState;fillColor=#222222;strokeColor=#333333;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="610" width="26" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" value="TaoChuyen()" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#a00040;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=15;" edge="1" parent="1" source="n2" target="n3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="DongDangKy()" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#a00040;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=15;" edge="1" parent="1" source="n3" target="n4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="when(NgayVe)" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#a00040;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=15;" edge="1" parent="1" source="n4" target="n5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="GuiKhaoSat()" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#a00040;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=15;" edge="1" parent="1" source="n6" target="n7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="GhiPhanHoi() [điểm 1..5]" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#a00040;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=15;" edge="1" parent="1" source="n7" target="n8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="" style="html=1;fontColor=#222222;endArrow=open;endFill=1;startArrow=none;strokeColor=#a00040;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=15;" edge="1" parent="1" source="n8" target="n9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

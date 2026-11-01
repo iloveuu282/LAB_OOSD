@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17" type="device" sourceImage="image141.png" sourceOccurrence="158">
+  <diagram id="lab5-hinh82" name="Hình 082 - Class Chức năng Tour hành trình">
+    <mxGraphModel dx="2008" dy="1927" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2010" pageHeight="1930" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1" value="" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#8b5a67;fontColor=#111111;fontSize=28;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="788" y="63" width="350" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="TourService&lt;br&gt;(from Dieu khien)" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#8b5a67;fontColor=#111111;fontSize=28;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;fontStyle=1;" vertex="1" parent="n1">
+          <mxGeometry x="0" y="0" width="350" height="101" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#8b5a67;fontColor=#111111;fontSize=28;fontFamily=Arial;align=left;verticalAlign=middle;spacing=3;" vertex="1" parent="n1">
+          <mxGeometry x="0" y="103" width="350" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="LayTour()&lt;br&gt;&lt;br&gt;LayTourMoBan()&lt;br&gt;ThemTour()&lt;br&gt;ThemDiemDung()&lt;br&gt;ThemChang()&lt;br&gt;ThemDiemTQTour()" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#8b5a67;fontColor=#111111;fontSize=28;fontFamily=Arial;align=left;verticalAlign=middle;spacing=3;" vertex="1" parent="n1">
+          <mxGeometry x="0" y="127" width="350" height="293" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#8b5a67;fontColor=#111111;fontSize=28;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="788" y="604" width="369" height="375" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="DanhMucService&lt;br&gt;(from Dieu khien)" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#8b5a67;fontColor=#111111;fontSize=28;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;fontStyle=1;" vertex="1" parent="n5">
+          <mxGeometry x="0" y="0" width="369" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#8b5a67;fontColor=#111111;fontSize=28;fontFamily=Arial;align=left;verticalAlign=middle;spacing=3;" vertex="1" parent="n5">
+          <mxGeometry x="0" y="104" width="369" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="n8" value="LayPhuongTien() &lt;br&gt;LayDiemBan()&lt;br&gt;LayHDV()&lt;br&gt;LayDiemThamQuan()&lt;br&gt;Them...()" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#8b5a67;fontColor=#111111;fontSize=28;fontFamily=Arial;align=left;verticalAlign=middle;spacing=3;" vertex="1" parent="n5">
+          <mxGeometry x="0" y="128" width="369" height="247" as="geometry" />
+        </mxCell>
+        <mxCell id="n9" value="" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#8b5a67;fontColor=#111111;fontSize=28;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="1489" y="63" width="404" height="690" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" value="Tour&lt;br&gt;(from Thuc the)" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#8b5a67;fontColor=#111111;fontSize=28;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;fontStyle=1;" vertex="1" parent="n9">
+          <mxGeometry x="0" y="0" width="404" height="101" as="geometry" />
+        </mxCell>
+        <mxCell id="n11" value="MaTour : String&lt;br&gt;TenTour : String&lt;br&gt;SoNgay : Integer&lt;br&gt;SoDem : Integer&lt;br&gt;DonGiaKhach : Decimal&lt;br&gt;MoTa : String&lt;br&gt;DangMoBan : Boolean" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#8b5a67;fontColor=#111111;fontSize=28;fontFamily=Arial;align=left;verticalAlign=middle;spacing=3;" vertex="1" parent="n9">
+          <mxGeometry x="0" y="103" width="404" height="338" as="geometry" />
+        </mxCell>
+        <mxCell id="n12" value="themTour()&lt;br&gt;themDiemDung()&lt;br&gt;ganPhuongTien()&lt;br&gt;ganDiemThamQuan()&lt;br&gt;laySoNgay()" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#8b5a67;fontColor=#111111;fontSize=28;fontFamily=Arial;align=left;verticalAlign=middle;spacing=3;" vertex="1" parent="n9">
+          <mxGeometry x="0" y="442" width="404" height="248" as="geometry" />
+        </mxCell>
+        <mxCell id="n13" value="" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#8b5a67;fontColor=#111111;fontSize=28;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="1489" y="839" width="456" height="419" as="geometry" />
+        </mxCell>
+        <mxCell id="n14" value="DiemDung&lt;br&gt;(from Thuc the)" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#8b5a67;fontColor=#111111;fontSize=28;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;fontStyle=1;" vertex="1" parent="n13">
+          <mxGeometry x="0" y="0" width="456" height="101" as="geometry" />
+        </mxCell>
+        <mxCell id="n15" value="ThuTu : Integer&lt;br&gt;TenDiemDung : String&lt;br&gt;DoiPhuongTien : Boolean&lt;br&gt;CoNoiAn : Boolean&lt;br&gt;CoKhachSan : Boolean&lt;br&gt;HangSaoKhachSan : Integer" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#8b5a67;fontColor=#111111;fontSize=28;fontFamily=Arial;align=left;verticalAlign=middle;spacing=3;" vertex="1" parent="n13">
+          <mxGeometry x="0" y="103" width="456" height="292" as="geometry" />
+        </mxCell>
+        <mxCell id="n16" value="" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#8b5a67;fontColor=#111111;fontSize=28;fontFamily=Arial;align=left;verticalAlign=middle;spacing=3;" vertex="1" parent="n13">
+          <mxGeometry x="0" y="397" width="456" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="n17" value="" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#8b5a67;fontColor=#111111;fontSize=28;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="1489" y="1344" width="367" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="n18" value="ChangPhuongTien&lt;br&gt;(from Thuc the)" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#8b5a67;fontColor=#111111;fontSize=28;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;fontStyle=1;" vertex="1" parent="n17">
+          <mxGeometry x="0" y="0" width="367" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="n19" value="Thu TuChang : Integer&lt;br&gt;GhiChu : String" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#8b5a67;fontColor=#111111;fontSize=28;fontFamily=Arial;align=left;verticalAlign=middle;spacing=3;" vertex="1" parent="n17">
+          <mxGeometry x="0" y="103" width="367" height="113" as="geometry" />
+        </mxCell>
+        <mxCell id="n20" value="" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#8b5a67;fontColor=#111111;fontSize=28;fontFamily=Arial;align=left;verticalAlign=middle;spacing=3;" vertex="1" parent="n17">
+          <mxGeometry x="0" y="217" width="367" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="n21" value="" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#8b5a67;fontColor=#111111;fontSize=28;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="1489" y="1670" width="381" height="194" as="geometry" />
+        </mxCell>
+        <mxCell id="n22" value="TourDiemThamQuan&lt;br&gt;(from Thuc the)" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#8b5a67;fontColor=#111111;fontSize=28;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;fontStyle=1;" vertex="1" parent="n21">
+          <mxGeometry x="0" y="0" width="381" height="101" as="geometry" />
+        </mxCell>
+        <mxCell id="n23" value="ThuTu : Integer" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#8b5a67;fontColor=#111111;fontSize=28;fontFamily=Arial;align=left;verticalAlign=middle;spacing=3;" vertex="1" parent="n21">
+          <mxGeometry x="0" y="103" width="381" height="67" as="geometry" />
+        </mxCell>
+        <mxCell id="n24" value="" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#8b5a67;fontColor=#111111;fontSize=28;fontFamily=Arial;align=left;verticalAlign=middle;spacing=3;" vertex="1" parent="n21">
+          <mxGeometry x="0" y="172" width="381" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="n25" value="" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#8b5a67;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="100" y="50" width="360" height="216.1" as="geometry" />
+        </mxCell>
+        <mxCell id="n26" value="«boundary»&lt;br&gt;FrmTour" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#8b5a67;fontColor=#111111;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;spacing=3;fontStyle=1;" vertex="1" parent="n25">
+          <mxGeometry x="0" y="0" width="360" height="47.8" as="geometry" />
+        </mxCell>
+        <mxCell id="n27" value="" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#555555;fontColor=#111111;fontSize=14;fontFamily=Arial;align=left;verticalAlign=middle;spacing=3;" vertex="1" parent="n25">
+          <mxGeometry x="0" y="47.8" width="360" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="n28" value="FrmTour_Load()&lt;br&gt;TaiTour()&lt;br&gt;TaiChiTiet()&lt;br&gt;btnThemTour_Click()&lt;br&gt;btnThemDD_Click()&lt;br&gt;btnThemChang_Click()&lt;br&gt;btnThemTQ_Click()" style="html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#ffffcc;strokeColor=#555555;fontColor=#111111;fontSize=14;fontFamily=Arial;align=left;verticalAlign=middle;spacing=3;" vertex="1" parent="n25">
+          <mxGeometry x="0" y="71.8" width="360" height="144.3" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" value="" style="html=1;fontColor=#222222;endArrow=none;endFill=1;startArrow=none;strokeColor=#a00040;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;" edge="1" parent="1" source="n25" target="n1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e0m0" value="" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=12;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="e0">
+          <mxGeometry x="-0.82" y="-12" relative="1" as="geometry">
+            <mxPoint x="0" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e0m1" value="" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=12;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="e0">
+          <mxGeometry x="0.82" y="-12" relative="1" as="geometry">
+            <mxPoint x="0" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e1" value="" style="html=1;fontColor=#222222;endArrow=none;endFill=1;startArrow=none;strokeColor=#a00040;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;" edge="1" parent="1" source="n25" target="n5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1m0" value="" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=12;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="e1">
+          <mxGeometry x="-0.82" y="-12" relative="1" as="geometry">
+            <mxPoint x="0" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e1m1" value="" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=12;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="e1">
+          <mxGeometry x="0.82" y="-12" relative="1" as="geometry">
+            <mxPoint x="0" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" value="" style="html=1;fontColor=#222222;endArrow=none;endFill=1;startArrow=none;strokeColor=#a00040;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;" edge="1" parent="1" source="n1" target="n9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2m0" value="" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=12;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="e2">
+          <mxGeometry x="-0.82" y="-12" relative="1" as="geometry">
+            <mxPoint x="0" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2m1" value="" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=12;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="e2">
+          <mxGeometry x="0.82" y="-12" relative="1" as="geometry">
+            <mxPoint x="0" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" value="" style="html=1;fontColor=#222222;endArrow=none;endFill=1;startArrow=none;strokeColor=#a00040;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;" edge="1" parent="1" source="n1" target="n13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3m0" value="" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=12;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="e3">
+          <mxGeometry x="-0.82" y="-12" relative="1" as="geometry">
+            <mxPoint x="0" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3m1" value="" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=12;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="e3">
+          <mxGeometry x="0.82" y="-12" relative="1" as="geometry">
+            <mxPoint x="0" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" value="" style="html=1;fontColor=#222222;endArrow=none;endFill=1;startArrow=none;strokeColor=#a00040;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;" edge="1" parent="1" source="n1" target="n17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="963.0" y="273.0" as="sourcePoint" />
+            <mxPoint x="1672.5" y="1464.0" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1313.5" y="273.0" />
+              <mxPoint x="1313.5" y="1464.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4m0" value="" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=12;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="e4">
+          <mxGeometry x="-0.82" y="-12" relative="1" as="geometry">
+            <mxPoint x="0" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4m1" value="" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=12;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="e4">
+          <mxGeometry x="0.82" y="-12" relative="1" as="geometry">
+            <mxPoint x="0" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" value="" style="html=1;fontColor=#222222;endArrow=none;endFill=1;startArrow=none;strokeColor=#a00040;fontSize=12;fontFamily=Arial;labelBackgroundColor=#ffffff;rounded=0;" edge="1" parent="1" source="n1" target="n21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="963.0" y="273.0" as="sourcePoint" />
+            <mxPoint x="1679.5" y="1767.0" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1313.5" y="273.0" />
+              <mxPoint x="1313.5" y="1767.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5m0" value="" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=12;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="e5">
+          <mxGeometry x="-0.82" y="-12" relative="1" as="geometry">
+            <mxPoint x="0" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5m1" value="" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=12;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="e5">
+          <mxGeometry x="0.82" y="-12" relative="1" as="geometry">
+            <mxPoint x="0" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
